@@ -9,7 +9,8 @@ body {
     width: 100%;
     height: 100%;
     background-image: url(/img/небо.jpg);
-    background-size: cover;
+
+
 }
 
 
@@ -17,7 +18,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    width: 900px;
+    width: 68%;
     margin: 0px auto;
     border: 1px solid #d4c9c9;
     border-radius: 6px;
@@ -36,14 +37,15 @@ button:hover {
 }
 
 button {
+    height: 24px;
     cursor: pointer;
 }
 
 
 select {
     width: 80px;
-    height: 34px;
-    margin: 20px;
+    height: 24px;
+    /* margin: 20px; */
     background-color: #f0f0f0;
     cursor: pointer;
 
@@ -108,7 +110,7 @@ thead tr:hover th:last-child {
 /* --- HEADER & NAVIGATION --- */
 .header {
 
-    width: 900px;
+    width: 68%;
     background: #fff;
     border: 1px solid #d4c9c9;
     border-radius: 5px;
@@ -145,11 +147,11 @@ thead tr:hover th:last-child {
 }
 
 .main-nav li {
-    margin: 0 8px;
+    margin: 0 5px;
 }
 
 .main-nav select {
-    height: 14px;
+    height: 24px;
 }
 
 .main-nav button,
