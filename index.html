@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="main-nav">
+            <button class="burger" id="burgerBtn" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="navMenu">
+                <li><button id="addRowBtn">Добавить строку</button></li>
+                <li><button id="newDocBtn">Новый документ</button></li>
+                <li><button id="saveDocBtn">Сохранить</button></li>
+                <li>
+                    <select id="docSelect">
+                        <option value="">Выбор</option>
+                    </select>
+                </li>
+                <li><button id="openSelectedDocBtn">Открыть выбранный</button></li>
+                <li><button id="deleteSelectedDocBtn">Удалить выбранный</button></li>
+                <li><button id="savePdfBtn">Сохранить как PDF</button></li>
+                <li><button id="openDocBtn">Открыть документ</button></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="container">
+            <table id="mainTable">
+                <caption>
+                    <h1 id="captionText" contenteditable="true">сметная стоимость</h1>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th> Наименование </th>
+                        <th>ед.изм.</th>
+                        <th>Объём</th>
+                        <th>цена</th>
+                        <th>стоимость</th>
+                        <th>заметки</th>
+                        <th>Удалить</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td contenteditable="true">грунтовка пола</td>
+                        <td contenteditable="true">м2</td>
+                        <td contenteditable="true" class="volume">20</td>
+                        <td contenteditable="true" class="price">100</td>
+                        <td class="cost">200</td>
+                        <td contenteditable="true">было очень много мусора</td>
+                        <td><button class="deleteRowBtn">Удалить</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td contenteditable="true">заполнить</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true" class="volume"></td>
+                        <td contenteditable="true" class="price"></td>
+                        <td class="cost"></td>
+                        <td contenteditable="true"></td>
+                        <td><button class="deleteRowBtn">Удалить</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td contenteditable="true">заполнить</td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true" class="volume"></td>
+                        <td contenteditable="true" class="price"></td>
+                        <td class="cost"></td>
+                        <td contenteditable="true"></td>
+                        <td><button class="deleteRowBtn">Удалить</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" style="text-align:right;font-weight:bold;">Сумма:</td>
+                        <td id="totalCost" style="font-weight:bold;">0</td>
+                        <td colspan="2"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <script src="./JS/style.js"></script>
+    <!-- Подключаем jsPDF и autotable для экспорта в PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.7.0/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</body>
+
+</html>
