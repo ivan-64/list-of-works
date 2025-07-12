@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Получаем основные элементы страницы
   const table = document.getElementById("mainTable");
   const addRowBtn = document.getElementById("addRowBtn");
   const tbody = table.querySelector("tbody");
@@ -433,8 +434,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // === АВТОЛИНКОВКА ДЛЯ КОЛОНКИ ЗАМЕТКИ ===
   /**
    * Преобразует текст с ссылками в HTML с кликабельными ссылками
-   * @param {string} text
-   * @returns {string}
+   * @param {string} text - текст для обработки
+   * @returns {string} - HTML с кликабельными ссылками
    */
   function linkify(text) {
     if (!text) return "";
