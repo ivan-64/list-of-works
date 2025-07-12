@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const row = document.createElement("tr");
     row.innerHTML = `
             <td></td>
-            <td contenteditable="true">заполнить</td>
+            <td contenteditable="true"></td>
             <td contenteditable="true"></td>
             <td contenteditable="true" class="volume"></td>
             <td contenteditable="true" class="price"></td>
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const row = document.createElement("tr");
     row.innerHTML = `
       <td>1</td>
-      <td contenteditable="true">заполнить</td>
+      <td contenteditable="true"></td>
       <td contenteditable="true"></td>
       <td contenteditable="true" class="volume"></td>
       <td contenteditable="true" class="price"></td>
