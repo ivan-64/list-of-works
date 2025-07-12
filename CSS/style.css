@@ -5,8 +5,9 @@
 }
 
 html {
-    background-image: url("https://github.com/ivan-64/list-of-works/blob/main/img/forest%201.jpg?raw=true");
-     background-size: cover;
+    /* background-image: url("https://github.com/ivan-64/list-of-works/blob/main/img/forest%201.jpg?raw=true"); */
+    background-image: url("/img/forest 1.jpg");
+    background-size: auto;
     background-repeat: no-repeat;
 }
 
@@ -15,7 +16,7 @@ body {
     width: 100%;
     height: 100%;
     /* background-image: url("https://github.com/ivan-64/list-of-works/blob/main/img/forest%201.jpg?raw=true"); */
-  
+
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -231,11 +232,7 @@ thead th:last-child {
 
 @media (max-width: 900px) {
 
-    body {
 
-
-        background-image: url(/img/forest\ 1.jpg)
-    }
 
     .main-nav ul {
         position: absolute;
@@ -329,9 +326,6 @@ thead th:last-child {
 
 /* ---- Адаптив для очень маленьких экранов (320px) ---- */
 @media (max-width: 320px) {
-
-
-
 
     section {
         width: 100%;
