@@ -58,8 +58,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Сохранить данные таблицы и заголовок в localStorage
+  // ВАЖНО: Данные сохраняются полностью, даже если часть колонок скрыта в адаптиве (например, заметки на мобильных)
   function saveToLocalStorage() {
-    // Сохраняем строки таблицы
+    // Сохраняем строки таблицы (все ячейки, даже скрытые на мобильных)
     const data = Array.from(tbody.rows).map((row) => {
       return Array.from(row.cells).map((cell) => cell.textContent);
     });
@@ -69,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Загрузить данные таблицы и заголовок из localStorage
+  // ВАЖНО: Все данные будут восстановлены, даже если часть колонок скрыта стилями
   function loadFromLocalStorage() {
     // Загружаем заголовок
     const savedCaption = localStorage.getItem(CAPTION_KEY);
@@ -81,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
       tbody.innerHTML = "";
       data.forEach((rowData) => {
         const row = document.createElement("tr");
+        // Восстанавливаем все ячейки, даже если некоторые из них будут скрыты на мобильных
         row.innerHTML = `
           <td>${rowData[0] || ""}</td>
           <td contenteditable="true">${rowData[1] || ""}</td>
