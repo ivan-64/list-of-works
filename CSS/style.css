@@ -238,11 +238,10 @@ thead th:last-child {
 
 
     .main-nav ul {
-        position: fixed;
+        position: absolute;
         top: 64px;
         right: 0;
-        /* background: #fff; */
-        background-color: rgba(255, 255, 255, 0.8);
+        background: #fff;
         flex-direction: column;
         width: 100vh;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
@@ -262,7 +261,7 @@ thead th:last-child {
         margin: 10px 0;
         width: 100%;
         text-align: right;
-        padding-right: 130px;
+        padding-right: 16px;
     }
 }
 
